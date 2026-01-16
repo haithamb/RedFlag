@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* 1. The General Layout */
+    body { 
+      width: 340px; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      padding: 0; 
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* 2. The Header */
+    .header {
+      background: linear-gradient(135deg, #ff4b1f, #ff9068);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .header h2 { margin: 0; font-size: 20px; letter-spacing: 0.5px; }
+    .header p { margin: 5px 0 0 0; font-size: 13px; opacity: 0.9; }
+
+    /* 3. The Content Area */
+    .container { padding: 20px; }
+
+    /* 4. The Button */
+    button {
+      width: 100%;
+      background-color: #ff4b1f; /* Vibrant Orange-Red */
+      color: white;
+      padding: 14px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: 8px;
+      transition: transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 4px 6px rgba(255, 75, 31, 0.3);
+    }
+    button:hover { 
+      background-color: #e03e16; 
+      transform: translateY(-1px);
+    }
+    button:active { transform: translateY(1px); }
+    button:disabled { background-color: #ccc; cursor: not-allowed; box-shadow: none; }
+
+    /* 5. The Result Box */
+    #output { 
+      margin-top: 20px; 
+      font-size: 14px; 
+      line-height: 1.6; 
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e1e1e1;
+      display: none; /* Hidden until we have results */
+    }
+
+    /* Styling the AI response */
+    ul { padding-left: 20px; margin: 10px 0; }
+    li { margin-bottom: 8px; }
+    strong { color: #d32f2f; } /* Make bold words red */
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>🚩 Red Flag Scanner</h2>
+    <p>Don't get tricked. Scan the fine print.</p>
+  </div>
+
+  <div class="container">
+    <button id="scanBtn">SCAN HIGHLIGHTED TEXT</button>
+    <div id="output"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Red Flag Scanner",
+  "version": "1.0",
+  "description": "Scans legal text for red flags.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Scan for Red Flags"
+  }
+}
