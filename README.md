@@ -4,7 +4,6 @@
 
 Red Flag Scanner is a Chrome Extension that uses AI to analyze "Terms of Service" and "Privacy Policy" pages. It highlights dangerous clauses, data-selling schemes, and rights waivers in seconds, so you know exactly what you're signing up for.
 
-![Red Flag Scanner Demo](https://via.placeholder.com/800x400.png?text=Add+Your+Demo+GIF+Here)
 
 ## ✨ Features
 - **Instant Analysis:** Highlights text and gets a summary in seconds.
