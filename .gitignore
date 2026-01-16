@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore local config (just in case you make one later)
+config.js
+secrets.js
